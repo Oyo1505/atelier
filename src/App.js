@@ -1,11 +1,12 @@
-import "./App.css";
+import "./asset/css/App.css";
 import { Routes, Route } from "react-router-dom";
-import ListPlayers from "./components/ListPlayers/ListPlayers";
+import Home from "./components/Home";
+
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<ListPlayers />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </div>
   );

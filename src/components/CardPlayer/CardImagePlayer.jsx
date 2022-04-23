@@ -2,7 +2,7 @@ import React from "react";
 
 const CardImagePlayer = ({ image }) => {
   return (
-    <div>
+    <div className="card-image-player">
       <img src={image} />
     </div>
   );

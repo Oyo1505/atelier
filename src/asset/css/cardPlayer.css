@@ -1,0 +1,13 @@
+.card {
+  display: flex;
+  flex-direction: row;
+}
+
+/*Image in card player*/
+.card-image-player {
+}
+
+.card-image-player img {
+}
+
+/*details in card player*/
