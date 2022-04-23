@@ -12,3 +12,7 @@ body {
     rgb(236, 136, 5) 100%
   );
 }
+
+input {
+  all: inherit;
+}

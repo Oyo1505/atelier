@@ -1,13 +1,24 @@
 .card {
   display: flex;
   flex-direction: row;
+  background-color: #ffff;
+  width: 100%;
 }
 
 /*Image in card player*/
 .card-image-player {
+  width: 220px;
 }
 
 .card-image-player img {
+  width: 100%;
+  object-fit: cover;
 }
 
 /*details in card player*/
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
