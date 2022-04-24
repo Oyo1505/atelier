@@ -7,9 +7,8 @@ const CardContent = ({ player }) => {
 
   useEffect(() => {
     const playerCountry = countries.countries.filter(
-      (el) => el.code === player.country.code
+      (country) => country.code === player.country.code
     );
-
     setCountry(playerCountry[0].country);
   }, []);
 

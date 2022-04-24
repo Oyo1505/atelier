@@ -11,6 +11,7 @@
   padding: 5px 0px 5px 15px;
   border-radius: 10px;
   width: 98%;
+  font-size: 0.9em;
 }
 #search-bar input::placeholder {
   color: var(--orange-light);

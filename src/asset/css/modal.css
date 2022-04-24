@@ -1,0 +1,62 @@
+.modal {
+  bottom: 0;
+  width: 76%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 83%;
+  background-color: #fff;
+}
+.modal:focus {
+  outline: 0;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--back-opacity);
+}
+/*IMAGE PLAYER*/
+.image-player-modal {
+  position: absolute;
+  height: 100%;
+  width: 35%;
+  bottom: 0;
+  left: -197px;
+}
+.image-player-modal img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/*BUTTON CLOSE*/
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+}
+.icon-close {
+  background-image: url("../images/close.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 64px;
+  height: 64px;
+}
+.btn-close {
+  position: fixed;
+  top: 10;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 5;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
