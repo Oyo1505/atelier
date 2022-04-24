@@ -3,8 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
+  font-size: 16px;
   background: linear-gradient(
     43deg,
     rgba(244, 232, 222, 1) 0%,
@@ -12,7 +12,27 @@ body {
     rgb(236, 136, 5) 100%
   );
 }
+/*Fonts*/
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("./asset/font/Montserrat/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "Mulish-Bold";
+  src: url("./asset/font/Mulish/Mulish-Bold.ttf");
+}
+@font-face {
+  font-family: "Mulish Semibold";
+  src: url("./asset/font/Mulish/Mulish-Medium.ttf");
+}
+/*Variables*/
+:root {
+  --orange: #f2753b;
+  --orange-light: #ebad65;
+  --back-opacity: rgba(0, 0, 0, 0.3);
+}
 
+/*Reset proprities*/
 input {
-  all: inherit;
+  all: unset;
 }

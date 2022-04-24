@@ -6,7 +6,10 @@ import dataPlayers from "../../asset/json/headtohead.json";
 const ListPlayers = () => {
   const [players, setPlayers] = useState([]);
   useEffect(() => {
-    setPlayers(dataPlayers.players);
+    const sortedPlayer = dataPlayers.players.sort(
+      (a, b) => a.data.rank - b.data.rank
+    );
+    setPlayers(sortedPlayer);
   }, []);
   if (!players) return <p>Loarding</p>;
 

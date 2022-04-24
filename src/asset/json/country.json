@@ -5,12 +5,16 @@
         "country": "USA"
     },
     {
-        "code": "SWI",
+        "code": "SRB",
+        "country":"Serbie"
+    },
+    {
+        "code": "SUI",
         "country": "Switzerland"
     },
     {
         "code": "ESP",
-        "country": "Spain"
+        "country": "Espagne"
     }
 ]
 }

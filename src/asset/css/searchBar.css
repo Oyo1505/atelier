@@ -4,9 +4,14 @@
 }
 
 #search-bar input {
+  font-family: "Montserrat-Bold";
+  color: var(--orange-light);
+  background-color: var(--back-opacity);
   height: 45px;
-  padding: 15px;
+  padding: 5px 0px 5px 15px;
   border-radius: 10px;
-  width: 100%;
-  background-color: black;
+  width: 98%;
+}
+#search-bar input::placeholder {
+  color: var(--orange-light);
 }

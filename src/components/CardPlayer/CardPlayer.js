@@ -5,7 +5,7 @@ import "../../asset/css/cardPlayer.css";
 const CardPlayer = ({ player }) => {
   return (
     <div className="card">
-      <CardImagePlayer image={player.picture} />
+      <CardImagePlayer image={player.picture} name={player.firstname} />
       <CardContent player={player} />
     </div>
   );

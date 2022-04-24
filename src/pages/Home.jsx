@@ -1,7 +1,7 @@
 import React from "react";
-import ListPlayers from "../ListPlayers/ListPlayers";
-import SearchBar from "../SearchBar";
-import "../../asset/css/home.css";
+import ListPlayers from "../components/ListPlayers/ListPlayers";
+import SearchBar from "../components/SearchBar";
+import "../asset/css/home.css";
 const Home = () => {
   return (
     <div id="home">
