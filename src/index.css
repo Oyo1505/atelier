@@ -10,15 +10,10 @@ html {
 body {
   min-height: 100%;
   font-size: 16px;
-  background: linear-gradient(
-    43deg,
-    rgba(244, 232, 222, 1) 0%,
-    rgb(245, 152, 76) 35%,
-    rgb(236, 136, 5) 100%
-  );
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url("./asset/images/background.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
 }
 /*Fonts*/
@@ -31,8 +26,20 @@ body {
   src: url("./asset/font/Mulish/Mulish-Bold.ttf");
 }
 @font-face {
-  font-family: "Mulish Semibold";
+  font-family: "Mulish-Semibold";
   src: url("./asset/font/Mulish/Mulish-Medium.ttf");
+}
+@font-face {
+  font-family: "Mulish-Ligth";
+  src: url("./asset/font/Mulish/Mulish-Light.ttf");
+}
+@font-face {
+  font-family: "Montserrat-thin";
+  src: url("./asset/font/Montserrat/Montserrat-Thin.ttf");
+}
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("./asset/font/Montserrat/Montserrat-ExtraBold.ttf");
 }
 /*Variables*/
 :root {

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import ListPlayers from "../components/ListPlayers/ListPlayers";
 import ModalPlayer from "../components/ModalPlayer/Modal";
 import SearchBar from "../components/SearchBar";

@@ -6,7 +6,6 @@
   margin-right: auto;
   left: 0;
   right: 0;
-  text-align: center;
   height: 83%;
   background-color: #fff;
 }
@@ -27,7 +26,7 @@
   height: 100%;
   width: 35%;
   bottom: 0;
-  left: -197px;
+  left: -139px;
 }
 .image-player-modal img {
   object-fit: cover;
@@ -59,4 +58,113 @@
   left: 0;
   right: 0;
   text-align: center;
+}
+/*MODAL Content*/
+.modal-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 60px 60px 0 255px;
+}
+/*MODAL HEADER*/
+
+.modal-header {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.modal-player-name h2 {
+  font-family: "Montserrat-ExtraBold";
+}
+.modal-player-name .firstname {
+  -webkit-text-stroke-width: 4px;
+  color: white;
+  -webkit-text-stroke-color: var(--orange);
+  font-size: 6em;
+}
+
+.modal-player-name .lastname {
+  font-size: 9em;
+  color: var(--orange);
+}
+
+/*FLAG*/
+.country-flag-modal {
+  text-align: center;
+}
+.country-flag-modal img {
+  width: 225px;
+  height: 125px;
+  object-fit: contain;
+}
+.country-flag-modal .code-country {
+  font-family: "Montserrat-thin";
+  color: var(--back-opacity);
+  font-size: 3.5em;
+  letter-spacing: 0.5em;
+}
+
+/*MODAL BODY*/
+.modal-body {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 1.2em;
+  padding-top: 65px;
+}
+
+/*Details players*/
+.all-details-player {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.all-details-player .row-details {
+  width: 100%;
+  height: 20%;
+  display: flex;
+
+  flex-direction: row;
+  gap: 3.5em;
+}
+.all-details-player .row-details .type {
+  letter-spacing: 0.15em;
+}
+.all-details-player .row-details .details-players {
+  width: 100px;
+  height: auto;
+}
+
+/*career*/
+.career {
+  width: 40%;
+  font-family: "Mulish-Semibold";
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+  color: var(--orange);
+  font-size: 0.9em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.career::-webkit-scrollbar {
+  display: none;
+}
+.career-title {
+  letter-spacing: 0.15em;
+  font-family: "Mulish-Bold";
+  color: var(--back-opacity);
+}
+.year-titles p {
+  line-height: 1.5em;
+}
+.year-titles p {
+  margin-top: 4px;
 }

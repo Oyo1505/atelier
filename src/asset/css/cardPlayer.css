@@ -49,16 +49,16 @@
   align-items: center;
   gap: 1em;
 }
-.details .details-players {
+.details-players {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
 }
-.details .details-players .type {
+.details-players .type {
   font-family: "Mulish-Bold";
   color: var(--back-opacity);
 }
-.details .details-players .text {
+.details-players .text {
   font-family: "Montserrat-Bold";
   color: var(--orange);
 }

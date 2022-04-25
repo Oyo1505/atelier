@@ -3,7 +3,7 @@ import React from "react";
 const ImagePlayerModal = ({ image, name }) => {
   return (
     <div className="image-player-modal">
-      <img src={image} />
+      <img src={image} alt={name} />
     </div>
   );
 };

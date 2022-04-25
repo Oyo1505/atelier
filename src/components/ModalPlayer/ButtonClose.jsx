@@ -1,7 +1,6 @@
 import React from "react";
 
 const ButtonClose = ({ closeModal, modalIsOpen }) => {
-  console.log(modalIsOpen);
   return (
     <div
       className="btn-close"
