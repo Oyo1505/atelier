@@ -1,5 +1,5 @@
 import React from "react";
-import ListPlayers from "../components/ListPlayers/ListPlayers";
+import ListPlayers from "../components/ListPlayers";
 import ModalPlayer from "../components/ModalPlayer/Modal";
 import SearchBar from "../components/SearchBar";
 import "../asset/css/home.css";

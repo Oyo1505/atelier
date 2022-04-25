@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import DetailPlayer from "../DetailPlayer/DetailsPlayer";
+import DetailPlayer from "../DetailPlayer";
 import countries from "../../asset/json/country.json";
 import getCountryPlayer from "../../utils/country";
 import { StoreContext } from "../../utils/StroreContext";
