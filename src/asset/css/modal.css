@@ -192,7 +192,7 @@
   }
 
   .modal-content {
-    padding: 60px 60px 0 255px;
+    padding: 60px 60px 0 13em;
     overflow-y: hidden;
   }
   .modal-player-name .firstname {
@@ -216,7 +216,7 @@
     flex-direction: row;
     justify-content: flex-end;
     font-size: 1.2em;
-    padding-top: 65px;
+    padding: 65px 0 0 0;
   }
 
   .all-details-player .row-details {
@@ -234,7 +234,7 @@
     position: absolute;
     left: 0px;
     right: 0px;
-    height: 80%;
+    height: 65%;
     bottom: 0px;
     background: linear-gradient(
       180deg,
