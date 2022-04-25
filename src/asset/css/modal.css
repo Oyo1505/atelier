@@ -168,3 +168,6 @@
 .year-titles p {
   margin-top: 4px;
 }
+
+@media only screen and (min-width: 900px) {
+}
