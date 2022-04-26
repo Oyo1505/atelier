@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import DetailPlayer from "../DetailPlayer";
-import PlayerName from "./PlayerName";
+import PlayerName from "../PlayerName";
 import countries from "../../asset/json/country.json";
 import getCountryPlayer from "../../utils/country";
 const CardContent = ({ player }) => {

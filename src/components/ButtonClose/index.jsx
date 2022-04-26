@@ -4,6 +4,7 @@ const ButtonClose = ({ closeModal, modalIsOpen }) => {
   return (
     <div
       className="btn-close"
+      aria-label="close"
       onClick={closeModal}
       style={{ display: modalIsOpen ? "inline-block" : "none" }}
     >

@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
-import PlayerNameModal from "./PlayerNameModal";
-import Flag from "./Flag";
+import Flag from "../Flag";
 import { StoreContext } from "../../utils/StroreContext";
+import PlayerNameModal from "../PlayerNameModal";
+
 const ModalHeader = () => {
   const { player } = useContext(StoreContext);
   return (

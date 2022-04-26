@@ -1,6 +1,6 @@
 import React from "react";
-import AllDetailsPlayer from "./AllDetailsPlayer";
-import CarreerPlayer from "./CarreerPlayer";
+import AllDetailsPlayer from "../AllDetailsPlayer";
+import CarreerPlayer from "../CareerPlayer";
 
 const ModalBody = () => {
   return (

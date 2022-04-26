@@ -1,6 +1,6 @@
 import React from "react";
-import ModalHeader from "./ModalHeader";
-import ModalBody from "./ModalBody";
+import ModalHeader from "../ModalHeader/";
+import ModalBody from "../ModalBody";
 const ModalContent = () => {
   return (
     <div className="modal-content">

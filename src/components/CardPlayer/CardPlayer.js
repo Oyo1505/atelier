@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import CardContent from "./CardContent";
-import CardImagePlayer from "./CardImagePlayer";
+import CardContent from "../CardContent/index";
+import CardImagePlayer from "../CardImagePlayer";
 import "../../asset/css/cardPlayer.css";
 import { StoreContext } from "../../utils/StroreContext";
 const CardPlayer = ({ player }) => {
