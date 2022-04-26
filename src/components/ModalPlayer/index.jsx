@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import Modal from "react-modal";
-
 import { StoreContext } from "../../utils/StroreContext";
 import "../../asset/css/modal.css";
 import ButtonClose from "../ButtonClose";
@@ -15,7 +14,7 @@ const ModalPlayer = () => {
     <>
       <ButtonClose closeModal={closeModal} modalIsOpen={modalIsOpen} />
       <Modal isOpen={modalIsOpen} className="modal" overlayClassName="overlay">
-        <ImagePlayerModal image={player.picture} />
+        <ImagePlayerModal image={player.picture} name={player.lastname} />
         <ModalContent />
       </Modal>
     </>

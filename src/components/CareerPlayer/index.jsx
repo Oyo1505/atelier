@@ -1,30 +1,24 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import { StoreContext } from "../../utils/StroreContext";
+import ItemTitles from "../ListTitles";
 const CarreerPlayer = () => {
+  const { player } = useContext(StoreContext);
+
+  if (!player.data) return <p>No titles</p>;
   return (
-    <div className="career">
-      <p className="career-title">CAREER TITLES </p>
-      <div className="year-titles">
-        <span className="date">
-          <b>2021</b> - 5
-        </span>
-        <p>Lorem ipsum dolor sit amet, consectetur </p>
-        <p>Lorem ipsum dolor sit amet, consectetur </p>
-        <p>Lorem ipsum dolor sit amet, consectetur </p>
-        <p>Lorem ipsum dolor sit amet, consectetur </p>
-        <p>Lorem ipsum dolor sit amet, consectetur </p>
+    <>
+      <div className="career">
+        <div className="career-title">CAREER TITLES </div>
+        {player.data.titles.map((title, i) => (
+          <ItemTitles
+            key={i}
+            year={title.year}
+            numberOfTrophy={title.numberOfTrophy}
+            locations={title.location}
+          />
+        ))}
       </div>
-      <div className="year-titles">
-        <span className="date">
-          <b>2020</b>-4
-        </span>
-        <p>Lorem ipsum dolor sit amet, consectetur </p>
-        <p>Lorem ipsum dolor sit amet, consectetur </p>
-        <p>Lorem ipsum dolor sit amet, consectetur </p>
-        <p>Lorem ipsum dolor sit amet, consectetur </p>
-        <p>Lorem ipsum dolor sit amet, consectetur </p>
-      </div>
-    </div>
+    </>
   );
 };
 

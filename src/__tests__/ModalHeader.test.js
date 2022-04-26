@@ -1,26 +1,11 @@
 import React, { useContext } from "react";
 import { render, fireEvent, cleanup } from "@testing-library/react";
 import { screen } from "@testing-library/dom";
-import CardPlayer from "../components/CardPlayer";
-import CardContent from "../components/CardContent";
-import CardImagePlayer from "../components/CardImagePlayer";
 import { StoreContext, StoreProviderWrapper } from "../utils/StroreContext";
-import { mount } from "enzyme";
-
-afterEach(cleanup);
-
-const CardPlayerComponent = ({ player }) => {
-  const { openModal } = useContext(StoreContext);
-
-  return (
-    <div className="card" onClick={() => openModal(player)} aria-label="open">
-      <CardImagePlayer image={player.picture} name={player.firstname} />
-      <CardContent player={player} />
-    </div>
-  );
-};
-
-describe("CardPlayer", () => {
+import ModalHeader from "../components/ModalHeader";
+import PlayerNameModal from "../components/PlayerNameModal";
+import Flag from "../components/Flag";
+describe("ModalHeader", () => {
   let player = {
     id: 52,
     firstname: "Novak",
@@ -43,11 +28,21 @@ describe("CardPlayer", () => {
       last: [1, 1, 1, 1, 1],
     },
   };
-
-  test("test on CardPlayer click", () => {
+  const ModalHeaderComponent = () => {
+    return (
+      <div className="modal-header">
+        <PlayerNameModal
+          lastName={player.lastname}
+          firstName={player.firstname}
+        />
+        <Flag flag={player.country.picture} codeCountry={player.country.code} />
+      </div>
+    );
+  };
+  test("render Modal Heeader", () => {
     render(
       <StoreProviderWrapper>
-        <CardPlayerComponent player={player} />
+        <ModalHeaderComponent />
       </StoreProviderWrapper>
     );
   });

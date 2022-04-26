@@ -4,6 +4,7 @@ const StoreContext = createContext();
 const StoreProviderWrapper = (props) => {
   const [player, setPlayer] = useState([]);
   const [players, setPlayers] = useState([]);
+
   /*Fetch data players */
   useEffect(() => {
     const sortedPlayer = dataPlayers.players.sort(
@@ -12,7 +13,7 @@ const StoreProviderWrapper = (props) => {
     setPlayers(sortedPlayer);
   }, []);
 
-  //filter players from the value search bar
+  //filter players from the  search bar value
   const filterPlayer = (value) => {
     const newArrPlayers = dataPlayers.players.filter((player) =>
       [player.firstname, player.lastname]
@@ -23,6 +24,7 @@ const StoreProviderWrapper = (props) => {
 
     setPlayers(newArrPlayers);
   };
+
   //MODAL
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
@@ -30,12 +32,15 @@ const StoreProviderWrapper = (props) => {
     setIsOpen(true);
     setPlayer(product);
   }
+
   function closeModal() {
     setIsOpen(false);
   }
+
   function getPlayer(product) {
     setPlayer(product);
   }
+
   const store = {
     player,
     players,

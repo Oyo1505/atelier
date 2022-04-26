@@ -6,6 +6,7 @@ import { StoreContext } from "../../utils/StroreContext";
 const AllDetailPlayer = () => {
   const [country, setCountry] = useState("");
   const { player } = useContext(StoreContext);
+
   useEffect(() => {
     const playerCountry = getCountryPlayer(
       countries.countries,
