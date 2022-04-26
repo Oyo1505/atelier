@@ -12,6 +12,7 @@ const StoreProviderWrapper = (props) => {
     setPlayers(sortedPlayer);
   }, []);
 
+  //filter players from the value search bar
   const filterPlayer = (value) => {
     const newArrPlayers = dataPlayers.players.filter((player) =>
       [player.firstname, player.lastname]
@@ -19,6 +20,7 @@ const StoreProviderWrapper = (props) => {
         .toLowerCase()
         .includes(value)
     );
+
     setPlayers(newArrPlayers);
   };
   //MODAL

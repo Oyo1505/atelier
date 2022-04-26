@@ -28,9 +28,10 @@
   margin: 0 auto;
 }
 .image-player-modal img {
-  object-fit: cover;
-  width: 100%;
   height: 100%;
+  width: 60%;
+
+  object-fit: cover;
 }
 /*BUTTON CLOSE*/
 .icon {
@@ -70,11 +71,12 @@
 /*MODAL HEADER*/
 
 .modal-header {
-  width: 95%;
+  width: 70vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
+  gap: 1em;
 }
 .modal-player-name h2 {
   font-family: "Montserrat-ExtraBold";
@@ -179,6 +181,8 @@
     background-color: #fff;
   }
   .modal-header {
+    width: 62vw;
+
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -190,7 +194,10 @@
     bottom: 0;
     left: -139px;
   }
-
+  .image-player-modal img {
+    width: 100%;
+    height: 100%;
+  }
   .modal-content {
     padding: 60px 60px 0 13em;
     overflow-y: hidden;
@@ -218,7 +225,9 @@
     font-size: 1.2em;
     padding: 65px 0 0 0;
   }
-
+  .all-details-player {
+    width: 60vw;
+  }
   .all-details-player .row-details {
     width: 100%;
     height: 20%;
@@ -226,7 +235,7 @@
   }
 
   .career {
-    width: 40%;
+    width: 35vw;
   }
 
   .career:after {

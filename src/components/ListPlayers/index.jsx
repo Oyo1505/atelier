@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import CardPlayer from "../CardPlayer/CardPlayer";
+import CardPlayer from "../CardPlayer";
+
 import "../../asset/css/listPlayers.css";
 import { StoreContext } from "../../utils/StroreContext";
 

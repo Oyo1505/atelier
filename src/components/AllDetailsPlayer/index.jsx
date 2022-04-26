@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import DetailPlayer from "../DetailPlayer";
 import countries from "../../asset/json/country.json";
-import getCountryPlayer from "../../utils/country";
+import getCountryPlayer from "../../utils/utils";
 import { StoreContext } from "../../utils/StroreContext";
 const AllDetailPlayer = () => {
   const [country, setCountry] = useState("");
