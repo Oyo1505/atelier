@@ -6,7 +6,7 @@
 
 body {
   font-size: 16px;
-  background: url("./asset/images/background.webp");
+  background: url("../images/background.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -15,27 +15,27 @@ body {
 /*Fonts*/
 @font-face {
   font-family: "Montserrat-Bold";
-  src: url("./asset/font/Montserrat/Montserrat-Bold.ttf");
+  src: url("../font/Montserrat/Montserrat-Bold.ttf");
 }
 @font-face {
   font-family: "Mulish-Bold";
-  src: url("./asset/font/Mulish/Mulish-Bold.ttf");
+  src: url("../font/Mulish/Mulish-Bold.ttf");
 }
 @font-face {
   font-family: "Mulish-Semibold";
-  src: url("./asset/font/Mulish/Mulish-Medium.ttf");
+  src: url("../font/Mulish/Mulish-Medium.ttf");
 }
 @font-face {
   font-family: "Mulish-Ligth";
-  src: url("./asset/font/Mulish/Mulish-Light.ttf");
+  src: url("../font/Mulish/Mulish-Light.ttf");
 }
 @font-face {
   font-family: "Montserrat-thin";
-  src: url("./asset/font/Montserrat/Montserrat-Thin.ttf");
+  src: url("../font/Montserrat/Montserrat-Thin.ttf");
 }
 @font-face {
   font-family: "Montserrat-ExtraBold";
-  src: url("./asset/font/Montserrat/Montserrat-ExtraBold.ttf");
+  src: url("../font/Montserrat/Montserrat-ExtraBold.ttf");
 }
 /*Variables*/
 :root {
