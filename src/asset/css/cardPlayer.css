@@ -40,7 +40,6 @@
 }
 /*details in card player*/
 .details {
-  width: 100vw;
   padding: 10px;
   display: flex;
   flex-direction: column;

@@ -12,7 +12,8 @@ const AllDetailPlayer = () => {
       player.country.code
     );
     setCountry(playerCountry[0].country);
-  }, []);
+  }, [player]);
+
   return (
     <div className="all-details-player">
       <div className="row-details">

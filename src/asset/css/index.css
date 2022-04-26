@@ -37,7 +37,7 @@ body {
   font-family: "Montserrat-ExtraBold";
   src: url("../font/Montserrat/Montserrat-ExtraBold.ttf");
 }
-/*Variables*/
+/*COLORS*/
 :root {
   --orange: #f2753b;
   --orange-light: #ebad65;

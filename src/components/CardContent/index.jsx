@@ -12,7 +12,7 @@ const CardContent = ({ player }) => {
       player.country.code
     );
     setCountry(playerCountry[0].country);
-  }, []);
+  }, [player]);
 
   return (
     <div className="card-content">

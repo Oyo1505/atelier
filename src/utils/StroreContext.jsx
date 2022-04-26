@@ -36,7 +36,6 @@ const StoreProviderWrapper = (props) => {
   function getPlayer(product) {
     setPlayer(product);
   }
-  console.log(players);
   const store = {
     player,
     players,
