@@ -1,5 +1,5 @@
-[https://master.d742ltqufa2v2.amplifyapp.com/](SITE)
-[https://github.com/Oyo1505/atelier](REPO GITHUB)
+[SITE](https://master.d742ltqufa2v2.amplifyapp.com/)
+[https://github.com/Oyo1505/atelier](https://github.com/Oyo1505/atelier)
 
 # Getting Started with Create React App
 
