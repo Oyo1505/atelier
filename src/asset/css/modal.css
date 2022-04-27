@@ -171,7 +171,9 @@ h1 {
   line-height: 1.5em;
   margin-top: 4px;
 }
-
+.year-titles .year {
+  font-family: "Mulish-Bold";
+}
 @media only screen and (min-width: 768px) {
   .modal {
     bottom: 0;
