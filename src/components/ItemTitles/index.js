@@ -5,7 +5,7 @@ const ItemTitles = ({ year, numberOfTrophy, locations }) => {
     <>
       <div className="year-titles">
         <span className="date">
-          <b>{year}</b> - {numberOfTrophy}
+          <span className="year">{year}</span> - {numberOfTrophy}
         </span>
         {locations.map((location) => (
           <p>{location}</p>

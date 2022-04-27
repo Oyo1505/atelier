@@ -30,4 +30,11 @@ describe("CardImagePlayer", () => {
 
     expect(image).toHaveClass("card-image-player");
   });
+  test("Should render Attribute in the element card-image", async () => {
+    render(<CardImagePlayer image={"test.jpg"} name={"USA"} />);
+
+    const image = screen.getByRole("img");
+    expect(image).toHaveAttribute("src", "test.jpg");
+    expect(image).toHaveAttribute("alt", "player-USA");
+  });
 });

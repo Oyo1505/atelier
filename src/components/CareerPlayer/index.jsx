@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { StoreContext } from "../../utils/StroreContext";
-import ItemTitles from "../ListTitles";
+import ItemTitles from "../ItemTitles";
 const CarreerPlayer = () => {
   const { player } = useContext(StoreContext);
 

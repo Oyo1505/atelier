@@ -5,19 +5,13 @@ import CardPlayer from "../components/CardPlayer";
 import CardContent from "../components/CardContent";
 import CardImagePlayer from "../components/CardImagePlayer";
 import { StoreContext, StoreProviderWrapper } from "../utils/StroreContext";
-import { mount } from "enzyme";
 
 afterEach(cleanup);
 
 const CardPlayerComponent = ({ player }) => {
-  const { openModal } = useContext(StoreContext);
-
-  return (
-    <div className="card" onClick={() => openModal(player)} aria-label="open">
-      <CardImagePlayer image={player.picture} name={player.firstname} />
-      <CardContent player={player} />
-    </div>
-  );
+  <StoreProviderWrapper>
+    <CardPlayerComponent player={player} />
+  </StoreProviderWrapper>;
 };
 
 describe("CardPlayer", () => {
@@ -45,10 +39,6 @@ describe("CardPlayer", () => {
   };
 
   test("test on CardPlayer click", () => {
-    render(
-      <StoreProviderWrapper>
-        <CardPlayerComponent player={player} />
-      </StoreProviderWrapper>
-    );
+    render(<CardPlayerComponent player={player} />);
   });
 });
