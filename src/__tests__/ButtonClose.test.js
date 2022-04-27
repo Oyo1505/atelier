@@ -21,11 +21,14 @@ describe("ButtonClose", () => {
     expect(mockClose.mock.calls.length).toBe(1);
   });
 
-  test("test on modalIsOpen is false", () => {
+  test("should open the modal", () => {
+    const mockClose = jest.fn();
     render(
-      <ButtonClose closeModal={() => null} modalIsOpen={false}>
+      <ButtonClose closeModal={mockClose} modalIsOpen={false}>
         <div></div>
       </ButtonClose>
     );
+    const close = document.body.querySelector("[aria-label='close']");
+    expect(close).toBeDefined();
   });
 });

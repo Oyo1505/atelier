@@ -47,15 +47,15 @@ describe("SeacrBar", () => {
     );
   });
   afterEach(cleanup);
-  test("pass search to test change input value", async () => {
+  test("pass search to test empty input value", async () => {
     const { queryByPlaceholderText } = render(
       <StoreProviderWrapper>
         <SearchBarCompenent />
       </StoreProviderWrapper>
     );
     const searchInput = queryByPlaceholderText("Rechercher un joueur");
-    searchInput.value = "Rafal";
+    searchInput.value = "";
 
-    expect(searchInput.value).toBe("Rafal");
+    expect(searchInput.value).toBe("");
   });
 });

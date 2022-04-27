@@ -3,7 +3,6 @@ import { StoreContext } from "../../utils/StroreContext";
 import ItemTitles from "../ItemTitles";
 const CarreerPlayer = () => {
   const { player } = useContext(StoreContext);
-
   if (!player.data) return <p>No titles</p>;
   return (
     <>
