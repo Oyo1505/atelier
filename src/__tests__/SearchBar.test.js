@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { render, fireEvent, cleanup } from "@testing-library/react";
 import { screen } from "@testing-library/dom";
 import { StoreContext, StoreProviderWrapper } from "../utils/StroreContext";
-
+afterEach(cleanup);
 describe("SeacrBar", () => {
   const SearchBarCompenent = () => {
     const { filterPlayer } = useContext(StoreContext);
@@ -24,6 +24,15 @@ describe("SeacrBar", () => {
       </div>
     );
   };
+  test("it render correctly", () => {
+    const { queryByPlaceholderText, queryByTestId } = render(
+      <StoreProviderWrapper>
+        <SearchBarCompenent />
+      </StoreProviderWrapper>
+    );
+    expect(queryByPlaceholderText("Rechercher un joueur")).toBeTruthy();
+    expect(queryByTestId("input-search-bar")).toBeTruthy();
+  });
   test("render search input ", () => {
     render(
       <StoreProviderWrapper>
@@ -46,7 +55,7 @@ describe("SeacrBar", () => {
       "Rechercher un joueur"
     );
   });
-  afterEach(cleanup);
+
   test("pass search to test empty input value", async () => {
     const { queryByPlaceholderText } = render(
       <StoreProviderWrapper>
