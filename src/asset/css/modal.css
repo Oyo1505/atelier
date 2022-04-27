@@ -23,14 +23,13 @@
 /*IMAGE PLAYER*/
 .image-player-modal {
   height: 28%;
-  width: 40%;
+  width: 60%;
 
   margin: 0 auto;
 }
 .image-player-modal img {
   height: 100%;
   width: 60%;
-
   object-fit: cover;
 }
 /*BUTTON CLOSE*/
@@ -78,18 +77,19 @@
   align-items: flex-start;
   gap: 1em;
 }
-.modal-player-name h2 {
+.modal-player-name h2,
+h1 {
   font-family: "Montserrat-ExtraBold";
 }
 .modal-player-name .firstname {
   -webkit-text-stroke-width: 4px;
   color: white;
   -webkit-text-stroke-color: var(--orange);
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .modal-player-name .lastname {
-  font-size: 5em;
+  font-size: 3em;
   color: var(--orange);
 }
 
@@ -106,6 +106,7 @@
   color: var(--back-opacity);
   font-size: 1.5em;
   letter-spacing: 0.5em;
+  font-weight: 700;
 }
 
 /*MODAL BODY*/
@@ -121,20 +122,21 @@
 
 /*Details players*/
 .all-details-player {
-  width: 60%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
+  gap: 0.3em;
+  padding-bottom: 1em;
 }
 .all-details-player .row-details {
   width: 100%;
   height: 34%;
   display: flex;
   flex-direction: row;
-  gap: 1.5em;
+  gap: 0.5em;
 }
 .all-details-player .row-details .type {
-  letter-spacing: 0.15em;
+  letter-spacing: 0.09em;
 }
 .all-details-player .row-details .details-players {
   width: 100px;
@@ -214,6 +216,7 @@
   }
   .country-flag-modal .code-country {
     font-size: 3.5em;
+    font-weight: 100;
   }
   /*MODAL BODY*/
   .modal-body {
@@ -234,6 +237,9 @@
     gap: 3.5em;
   }
 
+  .all-details-player .row-details .type {
+    letter-spacing: 0.15em;
+  }
   .career {
     width: 35vw;
   }
