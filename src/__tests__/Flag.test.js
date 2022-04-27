@@ -11,17 +11,17 @@ describe("Flag", () => {
     expect(codeCountry).toBeInTheDocument();
   });
 
-  test("Should render role of the codeCountry prop", async () => {
+  test("Should render role of the h2 ", async () => {
     render(<Flag flag={"test.jpg"} codeCountry={"USA"} />);
 
     const codeCountry = screen.getByRole("heading");
     expect(codeCountry).toBeInTheDocument();
   });
 
-  test("Should render role of the flag prop", async () => {
+  test("Should render role of img", async () => {
     render(<Flag flag={"test.jpg"} codeCountry={"USA"} />);
 
-    const flag = screen.getByRole("img");
-    expect(flag).toBeInTheDocument();
+    const img = screen.getByRole("img");
+    expect(img).toBeInTheDocument();
   });
 });

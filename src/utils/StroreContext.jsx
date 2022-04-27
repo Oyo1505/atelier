@@ -7,6 +7,7 @@ const StoreProviderWrapper = (props) => {
 
   /*Fetch data players */
   useEffect(() => {
+    //Sorted players in asc way
     const sortedPlayer = dataPlayers.players.sort(
       (a, b) => a.data.rank - b.data.rank
     );
@@ -21,7 +22,6 @@ const StoreProviderWrapper = (props) => {
         .toLowerCase()
         .includes(value)
     );
-
     setPlayers(newArrPlayers);
   };
 
@@ -36,7 +36,7 @@ const StoreProviderWrapper = (props) => {
   function closeModal() {
     setIsOpen(false);
   }
-
+  //Get player to be display in the modal
   function getPlayer(product) {
     setPlayer(product);
   }

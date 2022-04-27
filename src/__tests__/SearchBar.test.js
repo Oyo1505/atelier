@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { render, fireEvent, cleanup } from "@testing-library/react";
 import { screen } from "@testing-library/dom";
 import { StoreContext, StoreProviderWrapper } from "../utils/StroreContext";
-import userEvent from "@testing-library/user-event";
+
 describe("SeacrBar", () => {
   const SearchBarCompenent = () => {
     const { filterPlayer } = useContext(StoreContext);
