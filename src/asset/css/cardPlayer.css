@@ -5,9 +5,12 @@
   width: 100%;
   height: auto;
   padding: 10px 10px 0 10px;
-  box-shadow: 0px 3px 23px -2px rgba(51, 51, 51, 0.66);
-  -webkit-box-shadow: 0px 3px 23px -2px rgba(51, 51, 51, 0.66);
-  -moz-box-shadow: 0px 3px 23px -2px rgba(51, 51, 51, 0.66);
+  box-shadow: 0 8px 24px -8px rgb(45 52 54 / 20%),
+    0 4px 8px -2px rgb(242 117 59 / 20%);
+  -webkit-box-shadow: 0 8px 24px -8px rgb(45 52 54 / 20%),
+    0 4px 8px -2px rgb(242 117 59 / 20%);
+  -moz-box-shadow: 0 8px 24px -8px rgb(45 52 54 / 20%),
+    0 4px 8px -2px rgb(242 117 59 / 20%);
 }
 
 /*Image in card player*/
@@ -63,7 +66,7 @@
 
 @media only screen and (min-width: 900px) {
   .card {
-    height: 20vh;
+    height: 175px;
   }
   .card-image-player {
     height: 100%;

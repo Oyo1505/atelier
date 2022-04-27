@@ -83,8 +83,10 @@ h1 {
 }
 .modal-player-name .firstname {
   -webkit-text-stroke-width: 4px;
+  -moz-box-text-stroke-width: 4px;
   color: white;
   -webkit-text-stroke-color: var(--orange);
+  -moz-box-shadow-stroke-color: var(--orange);
   font-size: 3em;
 }
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import DetailPlayer from "../DetailPlayer";
-import PlayerName from "../PlayerName";
+import CardPlayerName from "../CardPlayerName";
 import countries from "../../asset/json/country.json";
 import getCountryPlayer from "../../utils/utils";
 const CardContent = ({ player }) => {
@@ -16,7 +16,7 @@ const CardContent = ({ player }) => {
 
   return (
     <div className="card-content">
-      <PlayerName lastName={player.lastname} firstName={player.firstname} />
+      <CardPlayerName lastName={player.lastname} firstName={player.firstname} />
       <div className="details">
         <DetailPlayer type={"RANK"} text={`#${player.data.rank}`} />
         <DetailPlayer type={"POINTS"} text={player.data.points} />
