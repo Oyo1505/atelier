@@ -1,3 +1,6 @@
+[https://master.d742ltqufa2v2.amplifyapp.com/](SITE)
+[https://github.com/Oyo1505/atelier](REPO GITHUB)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
