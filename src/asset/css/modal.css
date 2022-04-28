@@ -82,7 +82,7 @@ h1 {
   font-family: "Montserrat-ExtraBold";
 }
 .modal-player-name .firstname {
-  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-width: 2px;
   -moz-box-text-stroke-width: 4px;
   color: white;
   -webkit-text-stroke-color: var(--orange);
@@ -193,6 +193,9 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+  }
+  .modal-player-name .firstname {
+    -webkit-text-stroke-width: 4px;
   }
   .image-player-modal {
     position: absolute;
