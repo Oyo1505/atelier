@@ -17,7 +17,11 @@ describe("Flag", () => {
     const codeCountry = screen.getByRole("heading");
     expect(codeCountry).toBeInTheDocument();
   });
-
+  test("Should render undefined passsed in codeCountry prop", async () => {
+    render(<Flag flag={"test.jpg"} codeCountry={""} />);
+    const codeCountry = screen.getByRole("heading");
+    expect(codeCountry.value).toBe(undefined);
+  });
   test("Should render role of img", async () => {
     render(<Flag flag={"test.jpg"} codeCountry={"USA"} />);
 
