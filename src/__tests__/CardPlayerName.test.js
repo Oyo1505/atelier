@@ -10,6 +10,11 @@ describe("CardPlayerName", () => {
       </h3>
     );
   };
+  test("it render correctly", async () => {
+    render(<CardPlayerName lastName={"Rol"} firstName={"Martin"} />);
+    const headingModalElements = screen.getAllByRole("heading");
+    expect(headingModalElements).toBeTruthy();
+  });
   test("Should render same text passsed in firstName and lastName props", async () => {
     render(<CardPlayerName lastName={"Rol"} firstName={"Martin"} />);
     const lastName = screen.getByText("Martin Rol");

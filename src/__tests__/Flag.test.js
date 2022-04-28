@@ -4,6 +4,13 @@ import { screen } from "@testing-library/dom";
 import Flag from "../components/Flag/";
 
 describe("Flag", () => {
+  test("it render correctly", () => {
+    render(<Flag flag={"test.jpg"} codeCountry={"USA"} />);
+    const codeCountry = screen.getByText("USA");
+    const flag = screen.getByText("USA");
+    expect(codeCountry).toBeTruthy();
+    expect(flag).toBeTruthy();
+  });
   test("Should render same text passsed in codeCountry prop", async () => {
     render(<Flag flag={"test.jpg"} codeCountry={"USA"} />);
 

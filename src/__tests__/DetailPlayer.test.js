@@ -15,6 +15,13 @@ describe("DetailPayer", () => {
       </div>
     );
   };
+  test("it render correctly", () => {
+    render(<DetailPlayer type={"RANK"} text={"#1"} />);
+    const type = screen.getByText("RANK");
+    const text = screen.getByText("#1");
+    expect(type).toBeTruthy();
+    expect(text).toBeTruthy();
+  });
   test("Should render same text passsed in type prop", async () => {
     render(<DetailPlayer type={"RANK"} text={"#1"} />);
     const type = screen.getByText("RANK");

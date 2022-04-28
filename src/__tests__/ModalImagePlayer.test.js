@@ -4,6 +4,12 @@ import { screen } from "@testing-library/dom";
 import ModalImagePlayer from "../components/ModalImagePlayer";
 
 describe("CardImagePlayer", () => {
+  test("it render correctly", async () => {
+    render(<ModalImagePlayer image={"test.jpg"} name={"USA"} />);
+
+    const img = screen.getByRole("img");
+    expect(img).toBeTruthy();
+  });
   test("Should render same text passsed in name prop", async () => {
     render(<ModalImagePlayer image={"test.jpg"} name={"USA"} />);
 

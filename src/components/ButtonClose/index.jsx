@@ -5,6 +5,7 @@ const ButtonClose = ({ closeModal, modalIsOpen }) => {
     <div
       className="btn-close"
       aria-label="close"
+      data-testid="close"
       onClick={closeModal}
       style={{ display: modalIsOpen ? "inline-block" : "none" }}
     >

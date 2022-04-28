@@ -29,4 +29,10 @@ describe("PlayerNameModal", () => {
     const headingModalElements = screen.getAllByRole("heading");
     expect(headingModalElements.length).toBe(2);
   });
+  test("It render correctly", async () => {
+    render(<ModalPlayerName />);
+
+    const headingModalElements = screen.getAllByRole("heading");
+    expect(headingModalElements).toBeTruthy();
+  });
 });

@@ -116,4 +116,17 @@ describe("ItemTitles", () => {
     const divElements = await screen.findAllByRole("paragraph");
     expect(divElements.length).toBe(4);
   });
+  test("it render correctly", async () => {
+    render(
+      <ItemTitlesComponent
+        key={516}
+        year={2020}
+        numberOfTrophy={3}
+        locations={location}
+      />
+    );
+
+    const divElements = await screen.findAllByRole("paragraph");
+    expect(divElements).toBeTruthy();
+  });
 });
